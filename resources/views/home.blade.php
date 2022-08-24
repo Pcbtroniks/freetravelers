@@ -4,6 +4,8 @@
 
 @section('content_header')
     <h1>Añadir un nuevo evento</h1>
+
+    @include('layout._partials.alert-success')
 @stop
 
 @section('content')
@@ -12,7 +14,7 @@
         <div class="card-title h1">Formulario de registro de evento</div>
 
         <br>
-    <form action="#" method="POST">
+    <form action="{{ route('event.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
 
         {{-- Start Date  --}}
@@ -56,16 +58,16 @@
             <input type="text" name="title" class="form-control" id="title" aria-describedby="eventName">
         </div>
 
-        {{-- Title --}}
+        {{-- Description --}}
         <div class="form-group">
             <label for="title">Descripción</label>
             <input type="text" name="description" class="form-control" id="description" aria-describedby="description">
         </div>
 
-        {{-- Place --}}
+        {{-- Location --}}
         <div class="form-group">
-            <label for="localtion">Ubicación</label>
-            <input type="text" name="localtion" class="form-control" id="localtion" aria-describedby="eventName">
+            <label for="location">Ubicación</label>
+            <input type="text" name="location" class="form-control" id="localtion" aria-describedby="location">
         </div>
 
         {{-- File --}}
@@ -77,7 +79,14 @@
             <div class="input-group-append">
                {{-- <button class="btn btn-outline-secondary" type="button">Button</button> --}}
             </div>
-          </div>
+        </div>
+
+        {{-- submit --}}
+        <div class="input-group is-invalid my-3">
+
+            <button class="btn btn-outline-secondary" type="submit">Agregar</button>
+        
+        </div>
         
     </form>
         

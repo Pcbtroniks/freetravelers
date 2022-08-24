@@ -37,7 +37,7 @@
 <!-- Events -->
 <section>
     <!-- Event -->
-    <div class="relative">
+    <!-- <div class="relative">
 
         <div class="absoulte">
             <img class="h-[192px] md:min-h-[228px] lg:min-h-[284px] w-full object-cover" src="./assets/img/travel1.jpg" alt="Evento mustra 1">
@@ -59,8 +59,34 @@
                 <button class="bg-white text-[#3f3f46] rounded-md p-2 md:p-4 font-bold">Vew More</button>
             </div>
         </div>
+    </div> -->
+    @foreach($events as $event)
+    <div class="relative">
+
+        <div class="absoulte">
+            <img class="h-[192px] md:min-h-[228px] lg:min-h-[284px] w-full object-cover" src="/storage/{{ $event->cover }}" alt="{{ $event->title }}">
+        </div>
+
+        <div class="text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            
+            <div> 
+                <span class="uppercase text-xl">Tuesday</span>
+                <br>
+                <p class="uppercase">{{ $event->start_date }} - {{ $event->end_date }}</p>
+            </div>
+            
+            <div>
+                <h3 class="text-2xl font-bold"> {{ $event->title }} </h3>
+            </div>
+
+            <div class="mt-2">
+                <button class="bg-white text-[#3f3f46] rounded-md p-2 md:p-4 font-bold">Vew More</button>
+            </div>
+        </div>
     </div>
-    <!-- Event -->
+    @endforeach
+
+    <!-- Event
     <div class="relative">
 
         <div class="absoulte">
@@ -84,7 +110,7 @@
             </div>
         </div>
     </div>
-    <!-- Event -->
+     Event
     <div class="relative">
 
         <div class="absoulte">
@@ -108,6 +134,7 @@
             </div>
         </div>
     </div>
+    -->
 
 
 </section>
