@@ -8,6 +8,7 @@ class EventController extends Controller
 {
     public function index() {
         $events = Event::all();
+        // dd(Event::find(1)->day);
         return view('front.calendar.index', compact('events'));
     }
 
@@ -32,7 +33,7 @@ class EventController extends Controller
         
         $event->save();
 
-        return back()->with(['success' => 'Evento Creado Extosamente']);
+        return back()->with(['success' => 'Evento Creado Exitosamente']);
 
     }
 

@@ -20,3 +20,16 @@ Route::controller(EventController::class)->prefix('event')->group(function() {
 Route::get('/home', function () {
     return view('home');
 });
+
+//Production Commands
+Route::get('/laravel/generate-storage-link',function(){
+    Artisan::call('storage:link');
+    return redirect()->route('admin.home')->with(['message'=>'Storage Enlazado!','alertStatus'=>'success']);
+});
+Route::get('/laravel/cache-clear-all',function(){
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('config:clear');
+    return redirect()->route('admin.home')->with(['message'=>'Datos en Cache Limpiados!','alertStatus'=>'success']);
+});

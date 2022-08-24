@@ -26,7 +26,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-solid fa-calendar"></i></span>
                 </div>
-                <input name="start_date" value="00-00-0000" id="start_date" data-date-format="dd-mm-yyyy" data-date="22-08-2022" type="text" class="form-control" required>
+                <input name="start_date" id="start_date" data-date-format="dd-mm-yyyy" value="24-08-2022" data-date="24-08-2022" type="text" class="form-control" required>
                 <div class="invalid-feedback">
                     Porfavor ingrese una fecha valida.
                 </div>
@@ -43,7 +43,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-solid fa-calendar"></i></span>
                 </div>
-                <input name="end_date" value="00-00-0000" id="end_date" data-date-format="dd-mm-yyyy" data-date="22-08-2022" type="text" class="form-control" required>
+                <input name="end_date" id="end_date" data-date-format="dd-mm-yyyy" value="24-08-2022" data-date="24-08-2022" type="text" class="form-control" required>
                 <div class="invalid-feedback">
                     Porfavor ingrese una fecha valida.
                 </div>
@@ -102,14 +102,8 @@
 
     <script src="./vendor/datepicker/datepicker.js"></script>
     <script>
-        $('#start_date').datepicker()
-        .on('changeDate', function(e) {
-            $('#end_date').val(e.date)
-        });
-        $('#end_date').datepicker()
-        .on('changeDate', function(e) {
-
-        });
+        $('#start_date').datepicker();
+        $('#end_date').datepicker();
     </script>
 
     <script> console.log('Hi!'); </script>

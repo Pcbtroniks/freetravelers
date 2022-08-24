@@ -64,19 +64,19 @@
     <div class="relative">
 
         <div class="absoulte">
-            <img class="h-[192px] md:min-h-[228px] lg:min-h-[284px] w-full object-cover" src="/storage/{{ $event->cover }}" alt="{{ $event->title }}">
+            <img class="img-bg h-[192px] md:min-h-[228px] lg:min-h-[284px] w-full object-cover" src="/storage/{{ $event->cover }}" alt="{{ $event->title }}">
         </div>
 
         <div class="text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             
             <div> 
-                <span class="uppercase text-xl">Tuesday</span>
+                <span class="uppercase text-xl font-bold event__title">{{ $event->date }}</span>
                 <br>
                 <p class="uppercase">{{ $event->start_date }} - {{ $event->end_date }}</p>
             </div>
             
             <div>
-                <h3 class="text-2xl font-bold"> {{ $event->title }} </h3>
+                <h3 class="text-2xl lg:text-5xl font-bold event__title"> {{ $event->title }} </h3>
             </div>
 
             <div class="mt-2">
@@ -192,4 +192,29 @@
 </section>
 </main>
 
+@endsection
+
+@section('css')
+<style>
+
+    @media (min-width: 768px) {
+        .event__title{
+        font-size: 2.25rem;
+    }
+    }
+
+    .img-bg {
+        position: relative;
+    }
+    .img-bg::before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .9);
+    }
+</style>
 @endsection

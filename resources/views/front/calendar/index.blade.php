@@ -24,13 +24,13 @@
         <div class="py-4 border my-4">
             <div class="grid grid-cols-3 py-4 leading-none text-center">
                 <div class="flex flex-col justify-center items-center">
-                    <p>Wensday</p>
-                    <p class="font-bold">14</p>
-                    <p>June</p>
+                    <p>{{ $event->date }}</p>
+                    <p class="font-bold">{{ $event->day }}</p>
+                    <p>{{ $event->month }}</p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
                     <div>
-                        <h2 class="font-bold text-center">{{ $event->title}}</h2>
+                        <h2 class="font-bold text-center">{{ $event->title }}</h2>
                     </div>
                     <br>
                     <div>
@@ -38,13 +38,13 @@
                     </div>
                 </div>
                 <div>
-                    <p class="font-bold">Lorem ipsum</p>
-                    <span>{{  $event->description}}</span>
+                    <p class="font-bold">{{  $event->description}}</p>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit</span>
                 </div>
             </div>
             <div class="flex justify-center gap-4">
                 <button class="border border-black rounded py-1 px-4 text-xs font-bold uppercase">Buy Tickets</button>
-                <button onclick="OpenBookEvent()" class="border border-black rounded py-1 px-4 text-xs font-bold uppercase">Book Tables</button>
+                <button onclick="OpenBookEvent()" class="border border-black rounded py-1 px-4 text-xs font-bold uppercase">Book Event</button>
             </div>
         </div>
         @endforeach
