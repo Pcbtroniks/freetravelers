@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/' ,'front.index')->name('home');
+
+Route::view('/calendar' ,'front.calendar.index')->name('calendar');
+
+Route::view('/contact' ,'front.contact.index')->name('contact');
 
 Route::get('/home', function () {
     return view('home');
