@@ -1,5 +1,7 @@
 @extends('layout.app')
 
+@section('title', 'Freetravelers | Contact')
+
 @section('content')
 
 <main>

@@ -1,10 +1,13 @@
 @extends('layout.app')
 
+@section('title', 'Freetravelers | Calendar')
+
 @section('content')
 
-<main>
 
-@include('front._partials.book-form')
+<main>
+    @include('front._partials.book-form')
+    
 <!-- Season -->
 <section class="my-10 md:my-20 w-full">
     <div class="flex justify-center items-center">
@@ -17,8 +20,7 @@
     <!-- Event -->
     <div class="px-4">
 
-    
-    
+
         <!-- Event card -->
         @foreach($events as $event)
         <div class="py-4 border my-4">
