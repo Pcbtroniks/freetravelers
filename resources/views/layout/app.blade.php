@@ -7,7 +7,8 @@
     <title>@yield('title', 'Free Travelers')</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/style.css">
+    {{-- <link rel="stylesheet" href="/css/style.css"> --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @yield('css')
 </head>

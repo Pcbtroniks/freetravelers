@@ -25,6 +25,6 @@ Route::controller( EventController::class )->prefix('event')->group( function() 
 
 Route::get('/home', function () {
 
-    return view('home');
+    return view('admin.home');
 
 });

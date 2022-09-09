@@ -30,6 +30,7 @@
 <!-- Season -->
 <section class="my-10 md:my-20 w-full">
     <div class="flex justify-center items-center">
+        {{-- <h2 class="text-4xl font-bold uppercase text-blue-600">Summer 2022</h2> --}}
         <h2 class="text-4xl font-bold uppercase text-[#71716a]">Summer 2022</h2>
     </div>
 </section>
