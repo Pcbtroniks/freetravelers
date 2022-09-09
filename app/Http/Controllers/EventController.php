@@ -3,44 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use App\Repositories\Front\Event as FrontEvent;
 
 class EventController extends Controller
 {
     public function index() {
-        $events = Event::all();
-        // dd(Event::find(1)->day);
-        return view('front.calendar.index', compact('events'));
+        
+        //
+
     }
 
-    public function store(){
+    public function store( FrontEvent $saveEvent ){
 
-
-        $event = new Event();
-
-        $date1 = \Carbon\Carbon::parse(request('start_date'));
-        $date2 = \Carbon\Carbon::parse(request('end_date'));
-
-        $event->start_date = $date1->format('Y-m-d');
-        $event->end_date = $date2->format('Y-m-d');
-
-        $event->title = request('title');
-        $event->description = request('description');
-        
-        $event->location = request('location') ?? 'Guadalajara, Jal.';
-
-
-        $event->cover = $this->storeFile(request(), 'covers', 'cover');
-        
-        $event->save();
+        $event = $saveEvent->save( request() );
 
         return back()->with(['success' => 'Evento Creado Exitosamente']);
 
     }
-
-    public function storeFile($request, $directoyName = 'images' ,$image_name = 'image'){
-        $filename = time() . '-' . $request->file($image_name)->getClientOriginalName();
-        $filePath = $request[$image_name]->storeAs($directoyName, $filename, 'public');
-
-        return $filePath;
-    }
+    
 }
