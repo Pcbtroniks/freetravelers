@@ -47,7 +47,7 @@
 
     <!-- Overlay Menu -->
 
-    @include('layout._partials.menu')
+    @include('front._partials.menu')
 
     <!-- Content -->
 
