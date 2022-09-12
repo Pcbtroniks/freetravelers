@@ -12,6 +12,8 @@ Route::get('/calendar' , [ FrontController::class , 'calendar'] )->name('calenda
 
 Route::get('/contact' , [ FrontController::class , 'contact'] )->name('contact');
 
+Route::get('/event' , [ FrontController::class , 'event'] )->name('event');
+
 
 // Events
 

@@ -31,4 +31,10 @@ class FrontController extends Controller
 
     }
 
+    public function event(){
+
+        return view('front.event.single');
+
+    }
+
 }
