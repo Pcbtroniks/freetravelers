@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsletterUsersController;
 use App\Http\Controllers\Front\FrontController;
 use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,12 @@ Route::controller( EventController::class )->prefix('event')->group( function() 
     Route::post('/', 'store')->name('event.store');
 
 });
+
+// Promotions
+
+Route::view('traveloffers/', 'front.traveloffers.index')->name('traveloffers');
+
+Route::post('newsletter/', [NewsletterUsersController::class,'store'])->name('newsletter.store');
 
 // Admin Panel
 
