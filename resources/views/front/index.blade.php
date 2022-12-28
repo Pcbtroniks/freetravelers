@@ -11,10 +11,10 @@
         </video>
 
         <div class="absolute text-center font-bold text-white text-b top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <h1 class="text-5xl md:text-7xl mb-8">#Free Travelers</h1>
+            <h1 class="text-5xl md:text-7xl mb-8">#FreeTravelers</h1>
             <div class="flex justify-center items-center gap-4">
-                <button class="bg-white w-full min-w-fit text-[#3f3f46] rounded-md p-2 md:p-4 font-bold">Buy ticket</button>
-                <button class="bg-white w-full min-w-fit text-[#3f3f46] rounded-md p-2 md:p-4 font-bold">Book an event</button>    
+                {{-- <button class="bg-white w-full min-w-fit text-[#3f3f46] rounded-md p-2 md:p-4 font-bold">Buy ticket</button>
+                <button class="bg-white w-full min-w-fit text-[#3f3f46] rounded-md p-2 md:p-4 font-bold">Book an event</button>     --}}
             </div>
         </div>
 

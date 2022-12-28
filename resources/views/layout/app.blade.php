@@ -34,7 +34,7 @@
             </div>
 
             <!-- Hamburguer Menu Bars-->
-            <div id="OpenBurguerMenu" class="burguer-menu z-50 top-0 right-0" onclick="handleLateralMenu(this)">
+            <div id="OpenBurguerMenu" class="burguer-menu z-50 top-0 right-0 cursor-pointer" onclick="handleLateralMenu(this)">
                 <div class="bar1 w-10 h-1 my-2 {{ request()->routeIs('home') ? 'bg-white' : 'bg-black'  }} duration-300"></div>
                 <div class="bar2 w-10 h-1 my-2 {{ request()->routeIs('home') ? 'bg-white' : 'bg-black'  }} duration-300"></div>
                 <div class="bar3 w-10 h-1 my-2 {{ request()->routeIs('home') ? 'bg-white' : 'bg-black'  }} duration-300"></div>
