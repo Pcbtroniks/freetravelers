@@ -75,8 +75,8 @@
             </ul>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="/" class="hover:underline">Free Travelers</a>. All Rights Reserved.
-        </span>
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© <script>document.write(new Date().getFullYear())</script> <noscript>2023</noscript> <a href="/" class="hover:underline">Free Travelers</a>. All Rights Reserved.
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 mt-2">Powered by <a href="/" class="hover:underline">PCBTRONIKS</a>.</span>
     </footer>
     
 
