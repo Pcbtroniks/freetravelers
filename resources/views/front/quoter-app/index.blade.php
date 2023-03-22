@@ -15,10 +15,14 @@
             </div>
             <div class="flex mt-8 justify-center lg:justify-start">
                 <div class="mr-8">
-                    <button class="px-6 py-2 rounded-lg bg-sky-500 text-white border border-sky-700 hover:bg-sky-700 hover:border-sky-500 font-bold">Ingresar</button>
+                    <a href="https://cotizador.freetraveler.com.mx/">
+                        <button class="px-6 py-2 rounded-lg bg-sky-500 text-white border border-sky-700 hover:bg-sky-700 hover:border-sky-500 font-bold">Ingresar</button>
+                    </a>
                 </div>
                 <div>
-                    <button class="px-6 py-2 rounded-lg text-sky-500 border border-sky-700 hover:bg-sky-500 hover:text-white hover:border-sky-500 font-bold">Contacto</button>
+                    <a href="{{ route('contact') }}">
+                        <button class="px-6 py-2 rounded-lg text-sky-500 border border-sky-700 hover:bg-sky-500 hover:text-white hover:border-sky-500 font-bold">Contacto</button>
+                    </a>
                 </div>
             </div>
         </div>
