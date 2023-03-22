@@ -15,6 +15,8 @@ Route::get('/contact' , [ FrontController::class , 'contact'] )->name('contact')
 
 Route::get('/event' , [ FrontController::class , 'event'] )->name('event');
 
+Route::get('quoter-app' , [ FrontController::class , 'quoterApp'] )->name('quoter-app');
+
 
 // Events
 

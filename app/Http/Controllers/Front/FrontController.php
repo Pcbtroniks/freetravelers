@@ -37,4 +37,10 @@ class FrontController extends Controller
 
     }
 
+    public function quoterApp(){
+
+        return view('front.quoter-app.index');
+
+    }
+
 }
