@@ -29,7 +29,7 @@
             <!-- Icon -->
             <div>
                 <a href="{{ route('home') }}">
-                    <img class="w-48" src="./assets/img/freetravelers-logo.jpg" alt="Logo Freetravelers">
+                    <img class="w-48" src="{{ asset('assets/img/freetravelers-logo.jpg') }}" alt="Logo Freetravelers">
                 </a>
             </div>
 
@@ -56,8 +56,8 @@
 
     <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-900">
         <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="#" class="flex items-center mb-4 sm:mb-0">
-                <img src="./assets/img/freetravelers-logo.jpg" class="mr-3 h-8" alt="Free Travelers Logo">
+            <a href="{{route('home')}}" class="flex items-center mb-4 sm:mb-0">
+                <img src="{{ asset('assets/img/freetravelers-logo.jpg') }}" class="mr-3 h-8" alt="Free Travelers Logo">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Free Travelers</span>
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">

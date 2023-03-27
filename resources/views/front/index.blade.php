@@ -152,37 +152,37 @@
             <div class="flex flex-wrap w-1/3">
               <div class="w-full p-1 md:p-2">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp">
+                  src="{{asset('assets/img/highlights/aerea-xcaret.jpg')}}">
               </div>
             </div>
             <div class="flex flex-wrap w-1/3">
               <div class="w-full p-1 md:p-2">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./assets/img/travel4.jpg">
+                  src="{{asset('assets/img/highlights/aerea-xcaret-05.jpg')}}">
               </div>
             </div>
             <div class="flex flex-wrap w-1/3">
               <div class="w-full p-1 md:p-2">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp">
+                  src="{{asset('assets/img/highlights/aerea-xcaret-01.jpg')}}">
               </div>
             </div>
             <div class="flex flex-wrap w-1/3">
               <div class="w-full p-1 md:p-2">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp">
+                  src="{{asset('assets/img/highlights/aerea-xcaret-02.jpg')}}">
               </div>
             </div>
             <div class="flex flex-wrap w-1/3">
               <div class="w-full p-1 md:p-2">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp">
+                  src="{{asset('assets/img/highlights/aerea-xcaret-04.jpg')}}">
               </div>
             </div>
             <div class="flex flex-wrap w-1/3">
               <div class="w-full p-1 md:p-2">
                 <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp">
+                  src="{{asset('assets/img/highlights/aerea-xcaret-03.jpg')}}">
               </div>
             </div>
           </div>

@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/' , [ FrontController::class , 'index'] )->name('home');
 
+Route::get('/home/new' , [ FrontController::class , 'home'] )->name('home.new');
+
 Route::get('/calendar' , [ FrontController::class , 'calendar'] )->name('calendar');
 
 Route::get('/contact' , [ FrontController::class , 'contact'] )->name('contact');

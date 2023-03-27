@@ -17,6 +17,12 @@ class FrontController extends Controller
 
     }
 
+    public function home()
+    {
+            
+            return view('front.home.home');
+    }
+
     public function calendar(Event $event){
 
         $events = $event->all();

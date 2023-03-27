@@ -1,6 +1,6 @@
 <div id="OverlayMenu" class="overlay-menu  h-full w-0 fixed z-50 top-0 left-0 bg-black overflow-x-hidden duration-500">
     
-    <img class="absolute top-9 left-8 w-48" src="./assets/img/freetravelers-logo.jpg" alt="Logo Freetravelers">
+    <img class="absolute top-9 left-8 w-48" src="{{asset('assets/img/freetravelers-logo.jpg')}}" alt="Logo Freetravelers">
 
     <a href="javascript:void(0)" onclick="CloseMenu()" class="absolute top-9 right-11 p-2 text-6xl text-[#818181] block duration-300 focus:text-[#f1f1f1] hover:text-[#f1f1f1]"> &times; </a>
 
